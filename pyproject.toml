@@ -5,8 +5,8 @@ description = "easy enumerate"
 authors = ["Hoyeung Wong <hoyeungw@outlook.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/hoyeungw/intype"
-repository = "https://github.com/hoyeungw/intype"
+homepage = "https://github.com/pydget/veho"
+repository = "https://github.com/pydget/veho"
 keywords = [
     "list", "array", "vector", "matrix", "1d-list", "2d-list",
     "map", "mapper", "mutate", "zipper", "enumerate", "iterate",
