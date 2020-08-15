@@ -1,4 +1,4 @@
-from veho.matrix.zipper import zipper
+from veho.matrix.zipper.zipper import zipper
 
 
 def duozipper(ma, mb, fn):

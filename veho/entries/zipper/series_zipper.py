@@ -1,4 +1,4 @@
-from veho.entries.zipper import zipper
+from veho.entries.zipper.zipper import zipper
 
 
 def duozipper(a, b, kfn, vfn=None):
