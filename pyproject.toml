@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "veho"
-version = "0.0.6"
+version = "0.0.7"
 description = "easy enumerate"
 authors = ["Hoyeung Wong <hoyeungw@outlook.com>"]
 license = "MIT"

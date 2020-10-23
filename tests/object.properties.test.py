@@ -3,7 +3,7 @@ from math import sqrt
 from foba.objects import Point
 from pyspare import deco
 
-from veho.object import entries, keys, values, to_dict
+from veho.object import entries, keys, values, to_dict, select_to_dict
 
 o = Point(3, 4, 'a')
 
@@ -38,5 +38,5 @@ for name, o in candidates.items():
     # if hasattr(o, '__dict__'): print('__dict__', deco_dict(o.__dict__))
     # if hasattr(o, '__slots__'): print('__slots__', deco_dict({s: getattr(o, s) for s in o.__slots__}))
     # print('inspect.getmembers', deco_entries(inspect.getmembers(o)))
-    print(deco(to_dict(o)))
+    print(deco(select_to_dict(o, 'x', 'y')))
     print()

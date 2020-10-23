@@ -1,4 +1,4 @@
-from .select import select_values
+from .select import select_values, select_entries, select_to_dict
 from .Object import keys, values, entries, to_dict, DICT, SLOTS
 
 
