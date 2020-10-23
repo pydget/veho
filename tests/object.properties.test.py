@@ -1,34 +1,42 @@
 import inspect
 from math import sqrt
 
+from foba.objects import Point
+from pyspare import deco_dict, deco_entries, deco, deco_vector
 
-def props_by_vars(obj):
-    # for property, value in vars(obj).items():
-    #     print(property, ": ", value)
-    return vars(obj)
+from veho.object import Object
 
-
-def props_by_inspect(obj):
-    return inspect.getmembers(obj)
+o = Point(3, 4, 'a')
 
 
-class Point:
-    id = 0
+class SlotPoint:
+    __slots__ = 'x', 'y', 'tag'
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, tag):
         self.x = x
         self.y = y
+        self.tag = tag
 
+    @property
     def distance(self):
         return sqrt(self.x ** 2 + self.y ** 2)
 
-    @staticmethod
-    def build(x, y):
-        return Point(x, y)
 
+candidates = {
+    'point': Point(3, 4, 'a'),
+    'dict_point': {'x': 3, 'y': 4, 'tag': 'b'},
+    'slot_point': SlotPoint(6, 8, 'c'),
+    'string': 'shakes',
+    'number': 127,
+}
 
-point = Point(3, 4)
-point.id = '223'
-print(type(point))
-print('props_by_vars', props_by_vars(point))
-print('props_by_inspect', props_by_inspect(point))
+for name, o in candidates.items():
+    print(name)
+    print(type(o))
+    # print('dir', deco(dir(o)))
+    # if hasattr(o, '__dict__') or hasattr(o, '__slots__'): print('vars', deco_dict(vars(o)))
+    # if hasattr(o, '__dict__'): print('__dict__', deco_dict(o.__dict__))
+    # if hasattr(o, '__slots__'): print('__slots__', deco_dict({s: getattr(o, s) for s in o.__slots__}))
+    # print('inspect.getmembers', deco_entries(inspect.getmembers(o)))
+    print(deco(Object.keys(o)))
+    print()

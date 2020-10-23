@@ -1,27 +1,14 @@
-from Levenshtein._levenshtein import distance
+from pyspare import deco_vector
+from texting import COSP
 
-countries = ['nigeria', 'india', 'nepal', 'pakistan', 'uzbekistan']
-alphabets = ['d', 's', 'y', 'a', 'e']
-numerics = [3, 1, 5, 7, 2]
-# misc = []
-# misc.extend(countries)
-# misc.extend(numerics)
-# vec = countries
-# print(vec)
-# vec.sort()
-# print(vec)
+list_collection = {
+    'countries': ['nigeria', 'india', 'nepal', 'pakistan', 'uzbekistan'],
+    'alphabets': ['d', 's', 'y', 'a', 'e'],
+    'numerics': [3, 1, 5, 7, 2],
+}
 
-some = alphabets[0]
-for word in alphabets:
-    print(some, word, distance(some, word))
-
-vec = []
-vec[1] = 1
-vec[3] = 3
-print(vec)
-
-
-def duobound(words, filter_x, mapper_x, filter_y, mapper_y):
-    ve_x = [], ve_y = []
-
-    return ve_x, ve_y
+for (k, v) in list_collection.items():
+    print(k, deco_vector(v, delim=COSP))
+    v.sort()
+    print(k, deco_vector(v, delim=COSP))
+    print()
