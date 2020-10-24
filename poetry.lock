@@ -43,8 +43,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "crostab"
-version = "0.0.5"
-description = ""
+version = "0.0.8"
+description = "cross table analytical tool"
 category = "dev"
 optional = false
 python-versions = ">=3.8,<4.0"
@@ -104,7 +104,7 @@ six = "*"
 
 [[package]]
 name = "palett"
-version = "0.0.4"
+version = "0.0.6"
 description = "pretty text for command line"
 category = "dev"
 optional = false
@@ -112,9 +112,11 @@ python-versions = ">=3.8,<4.0"
 
 [package.dependencies]
 aryth = ">=0.0.5"
+crostab = ">=0.0.5"
 intype = ">=0.0.2"
 ject = ">=0.0.1"
-veho = ">=0.0.4"
+pyspare = ">=0.0.6"
+veho = ">=0.0.7"
 
 [[package]]
 name = "pluggy"
@@ -145,7 +147,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "pyspare"
-version = "0.0.5"
+version = "0.0.6"
 description = "pretty print"
 category = "dev"
 optional = false
@@ -220,7 +222,7 @@ ject = ">=0.0.3,<0.0.4"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d15135a7fd157af2150b17ed134df4215f1773eee40f54c98e1761da316ff20e"
+content-hash = "f8adecf082b4df1e6cc12297556194592626cd77fc4c6b3423d9c56ae6d4d14b"
 
 [metadata.files]
 aryth = [
@@ -240,8 +242,8 @@ colorama = [
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
 crostab = [
-    {file = "crostab-0.0.5-py3-none-any.whl", hash = "sha256:6596ef6f0f6bc75046c7ca69d86501f342e01ceaba06e8db7d137c10e04f3a3d"},
-    {file = "crostab-0.0.5.tar.gz", hash = "sha256:16bc76f145ab1784670da7e88c9ea76ebc4eb19a69f3d6f677ae5052d87bd0a8"},
+    {file = "crostab-0.0.8-py3-none-any.whl", hash = "sha256:b32444ddde5988ef9b9ae0e5b033da5d8dd849254590c06c0670a614285537a3"},
+    {file = "crostab-0.0.8.tar.gz", hash = "sha256:86b4a080a7b834f9786f6081a500d3b1882ad846a267042e6b363cde686c0d58"},
 ]
 foba = [
     {file = "foba-0.0.7-py3-none-any.whl", hash = "sha256:244f771b4fb29c8887f7efd24785e7375c2d42bec5956434507ea51d17a05101"},
@@ -264,8 +266,8 @@ packaging = [
     {file = "packaging-20.4.tar.gz", hash = "sha256:4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8"},
 ]
 palett = [
-    {file = "palett-0.0.4-py3-none-any.whl", hash = "sha256:25050e3973aec73d0c952999502dcabd5633d0dd06d61ed507517bb8f064feb3"},
-    {file = "palett-0.0.4.tar.gz", hash = "sha256:3e69195db2f109519b5839dcb0cc11327677f77fc68f6ef45dcbda01d18f7b9c"},
+    {file = "palett-0.0.6-py3-none-any.whl", hash = "sha256:4eb17a84527ddb7b239c467590d74bf87934ac77ac605495f8581d19dd26def1"},
+    {file = "palett-0.0.6.tar.gz", hash = "sha256:20b7540dba977c1b56a3793695bcd558d6996b0e219a0832f174a955bcb97324"},
 ]
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
@@ -280,8 +282,8 @@ pyparsing = [
     {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
 ]
 pyspare = [
-    {file = "pyspare-0.0.5-py3-none-any.whl", hash = "sha256:b25ce5dd602744ea1d7e9a75cf88eb4786eeadcde6937fe4e81ad008ca836ac6"},
-    {file = "pyspare-0.0.5.tar.gz", hash = "sha256:334d89234405e5533e875d9ec1d132cfa741254a53dbf348f2a9551418697fc3"},
+    {file = "pyspare-0.0.6-py3-none-any.whl", hash = "sha256:a61928eaf3f12e923239637c9959da4a46bfc12b0e63c3bbb003676493a63774"},
+    {file = "pyspare-0.0.6.tar.gz", hash = "sha256:4fa21eb074e39075c3b5361b8b0c1d086a0f0814a0ac156204af718aab84b251"},
 ]
 pytest = [
     {file = "pytest-6.1.1-py3-none-any.whl", hash = "sha256:7a8190790c17d79a11f847fba0b004ee9a8122582ebff4729a082c109e81a4c9"},

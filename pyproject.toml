@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "veho"
-version = "0.0.7"
+version = "0.0.8"
 description = "easy enumerate"
 authors = ["Hoyeung Wong <hoyeungw@outlook.com>"]
 license = "MIT"
@@ -19,7 +19,7 @@ python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 pytest = ">=6.0.0"
-pyspare = ">=0.0.4"
+pyspare = ">=0.0.6"
 foba = ">=0.0.7"
 
 [build-system]
